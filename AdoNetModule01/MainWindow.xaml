@@ -9,7 +9,7 @@
     <Grid>
         <TabControl>
             <TabItem Header=" Equipment">
-                <ListView x:Name="ListView">
+                <ListView x:Name="ListView" >
                     <ListView.View>
                         <GridView>
                             <GridView.Columns>
@@ -30,6 +30,7 @@
                             Click="ConnetToServerButton_Click">
                         
                     </Button>
+                  
                 </WrapPanel>
             </TabItem>
         </TabControl>
