@@ -7,6 +7,32 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
+        <TabControl>
+            <TabItem Header=" Equipment">
+                <ListView x:Name="ListView">
+                    <ListView.View>
+                        <GridView>
+                            <GridView.Columns>
+                                <GridViewColumn Header=" Equipment Id"></GridViewColumn>
+                            </GridView.Columns>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </TabItem>
+            <TabItem Header=" Test Connection">
+                <WrapPanel>
+                    <Label x:Name="ConnectionMesseges" Margin="30" Width="200">
+                        
+                    </Label>
+                    <Button x:Name="ConnetToServerButton" 
+                            Content="Connect To Server"
+                            Margin="30"
+                            Click="ConnetToServerButton_Click">
+                        
+                    </Button>
+                </WrapPanel>
+            </TabItem>
+        </TabControl>
         
     </Grid>
 </Window>
